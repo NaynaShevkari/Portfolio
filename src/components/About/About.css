@@ -1,0 +1,32 @@
+.about-section {
+    min-height: 80vh;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-text:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 3rem 1rem;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }

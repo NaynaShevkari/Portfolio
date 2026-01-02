@@ -1,0 +1,125 @@
+.projects-section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+  }
+  
+  .project-card .card-title {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card .card-period {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .project-card .card-summary {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .card-tech-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-badge {
+    background: var(--bg-secondary);
+    color: var(--accent-purple);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+  }
+  
+  .project-card .card-link {
+    background: none;
+    border: none;
+    color: var(--accent-purple);
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card .card-link:hover {
+    color: var(--accent-cyan);
+  }
+  
+  .impact-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-left: 3px solid var(--accent-cyan);
+    border-radius: 4px;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .project-link-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-purple);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .project-link-btn:hover {
+    background: var(--accent-cyan);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .projects-section {
+      padding: 3rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-links {
+      flex-direction: column;
+    }
+  
+    .project-link-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
