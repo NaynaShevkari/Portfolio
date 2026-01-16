@@ -1,149 +1,20 @@
-.sidebar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 998;
-  backdrop-filter: blur(4px);
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: -500px;
-  width: 500px;
-  max-width: 90vw;
-  height: 100vh;
-  background: var(--bg-secondary);
-  border-left: 1px solid var(--border-color);
-  z-index: 999;
-  overflow-y: auto;
-  transition: right 0.3s ease;
-}
-
-.sidebar-open {
-  right: 0;
-}
-
-.sidebar-header {
-  position: sticky;
-  top: 0;
-  background: var(--bg-secondary);
-  padding: 2rem;
-  border-bottom: 1px solid var(--border-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.sidebar-title {
-  font-size: 1.5rem;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
 .sidebar-subtitle {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   font-size: 0.95rem;
-}
-
-.sidebar-close {
-  background: none;
-  border: none;
-  color: var(--text-primary);
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.sidebar-close:hover {
-  background: var(--border-color);
-}
-
-.sidebar-body {
-  padding: 2rem;
-}
-
-.sidebar-content {
-  color: var(--text-secondary);
-}
-
-.sidebar-description {
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.sidebar-heading {
-  color: var(--text-primary);
-  font-size: 1.1rem;
-  margin: 2rem 0 1rem;
-}
-
-.sidebar-list {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar-list li {
-  padding-left: 1.5rem;
-  margin-bottom: 0.75rem;
-  position: relative;
-  line-height: 1.6;
 }
 
 .sidebar-list li:before {
   content: "→";
   position: absolute;
   left: 0;
-  color: var(--accent-cyan);
-}
-
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  color: var(--accent-emerald);
 }
 
 .tech-tag {
-  background: var(--bg-primary);
-  color: var(--accent-cyan);
+  background: #f0fdf4;
+  color: var(--accent-emerald-dark);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.875rem;
   border: 1px solid var(--border-color);
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100vw;
-    right: -100vw;
-    left: auto;
-  }
-
-  .sidebar-open {
-    right: 0;
-    left: 0;
-  }
-
-  .sidebar-header {
-    padding: 1.5rem;
-  }
-
-  .sidebar-title {
-    font-size: 1.25rem;
-  }
-
-  .sidebar-body {
-    padding: 1.5rem;
-  }
 }

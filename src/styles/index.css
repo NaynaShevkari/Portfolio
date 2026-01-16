@@ -9,14 +9,15 @@ html {
 }
 
 :root {
-  /* Your color scheme */
-  --bg-primary: #0a0e27;
-  --bg-secondary: #151937;
-  --accent-cyan: #00d9ff;
-  --accent-purple: #7c3aed;
-  --text-primary: #ffffff;
-  --text-secondary: #a5b4fc;
-  --border-color: #1e293b;
+  /* Emerald + Slate Light Theme */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --accent-emerald: #10b981;
+  --accent-emerald-dark: #059669;
+  --accent-blue: #0ea5e9;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
 }
 
 body {
@@ -31,6 +32,28 @@ body {
 
 .App {
   min-height: 100vh;
+  width: 100%;
+}
+
+/* Global section container */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Global section title */
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent-emerald);
+  background: linear-gradient(135deg, var(--accent-emerald) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Scrollbar styling */
@@ -43,10 +66,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-purple);
+  background: var(--accent-emerald);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-cyan);
+  background: var(--accent-emerald-dark);
 }
